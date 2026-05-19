@@ -17,7 +17,7 @@ if (navToggle && navLinks) {
 }
 
 // 问卷链接：如需修改问卷地址，优先修改这里或 index.html 按钮上的 data-form-url
-const QUESTIONNAIRE_URL = "https://icnpo99vzu6r.feishu.cn/base/GQ6ObsULoaAxwpsIC9xcvd2bnPc?from=from_copylink";
+const QUESTIONNAIRE_URL = "https://icnpo99vzu6r.feishu.cn/share/base/form/shrcnd9c5Tnhm6PQDFhbto3qJ7o";
 
 // 问卷按钮：点击后会在新窗口打开飞书问卷
 const questionnaireButton = document.querySelector(".questionnaire-button");
