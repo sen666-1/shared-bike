@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="共享自行车收集转运系统设计项目展示网页">
+  <title>共享自行车收集转运系统设计</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="主导航">
+      <a class="brand" href="#home">共享自行车收集转运系统</a>
+      <button class="nav-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">项目首页</a>
+        <a href="#background">项目背景</a>
+        <a href="#system">系统介绍</a>
+        <a href="#features">核心功能</a>
+        <a href="#route">技术路线</a>
+        <a href="#questionnaire">调查问卷</a>
+        <a href="#team">团队信息</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">机械创新设计项目展示</p>
+        <h1>共享自行车收集转运系统设计</h1>
+        <p class="hero-subtitle">面向城市共享出行场景的智能化收集、检测、清洁与转运方案</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#questionnaire">填写调查问卷</a>
+          <a class="btn secondary" href="#system">了解系统方案</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="background" class="section">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">项目背景</p>
+          <h2>城市共享出行中的管理难题</h2>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <div class="icon">P</div>
+            <h3>乱停乱放</h3>
+            <p>共享自行车在地铁口、校园门口、商业区等区域集中堆放，影响通行秩序与城市形象。</p>
+          </article>
+          <article class="card">
+            <div class="icon">E</div>
+            <h3>人工调度效率低</h3>
+            <p>传统依靠人工巡检、搬运和摆放，响应速度慢，劳动强度大，难以及时处理高峰区域车辆积压。</p>
+          </article>
+          <article class="card">
+            <div class="icon">M</div>
+            <h3>维护成本高</h3>
+            <p>车辆故障、脏污、损坏等问题发现不及时，增加后续维修成本，也影响用户骑行体验。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="section tinted">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">系统介绍</p>
+          <h2>收集机器人与转运机器人协同工作</h2>
+          <p class="lead">本系统围绕共享自行车自动化管理需求，设计收集机器人和转运机器人两类执行单元，实现车辆识别、抓取、整理、检测、清洁和批量转运。</p>
+          <p>收集机器人负责在指定区域内完成车辆定位、机械夹爪抓取和规范摆放；转运机器人负责对收纳后的车辆进行固定、检测、清洁与跨区域调度，形成面向城市共享出行场景的闭环管理方案。</p>
+        </div>
+        <div class="system-panel">
+          <div class="robot-card">
+            <span>01</span>
+            <h3>收集机器人</h3>
+            <p>识别目标车辆，完成全向移动、精准靠近、夹爪抓取和整理摆放。</p>
+          </div>
+          <div class="robot-card">
+            <span>02</span>
+            <h3>转运机器人</h3>
+            <p>完成车辆固定收纳、检测清洁和调度转运，提升运维效率。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">核心功能</p>
+          <h2>从识别到转运的一体化能力</h2>
+        </div>
+        <div class="grid features">
+          <article class="card feature-card">
+            <h3>自动识别</h3>
+            <p>通过视觉识别共享自行车位置与姿态，为后续定位和抓取提供依据。</p>
+          </article>
+          <article class="card feature-card">
+            <h3>自动抓取</h3>
+            <p>机械夹爪适配车架结构，实现稳定夹持，减少人工搬运压力。</p>
+          </article>
+          <article class="card feature-card">
+            <h3>全向移动</h3>
+            <p>采用麦克纳姆轮全向移动方案，适应狭窄道路与复杂停车环境。</p>
+          </article>
+          <article class="card feature-card">
+            <h3>固定收纳</h3>
+            <p>车辆进入转运平台后进行限位固定，提高批量运输稳定性。</p>
+          </article>
+          <article class="card feature-card">
+            <h3>清洁检测</h3>
+            <p>对车辆外观、关键部位和基础状态进行检测，并完成简易清洁处理。</p>
+          </article>
+          <article class="card feature-card">
+            <h3>智能调度</h3>
+            <p>结合区域用车需求与车辆状态，支持更合理的收集和转运安排。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="route" class="section tinted">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">技术路线</p>
+          <h2>系统工作流程</h2>
+        </div>
+        <div class="timeline" aria-label="技术路线流程">
+          <div class="step">视觉识别</div>
+          <div class="step">目标定位</div>
+          <div class="step">机械抓取</div>
+          <div class="step">固定收纳</div>
+          <div class="step">检测清洁</div>
+          <div class="step">转运调度</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="section">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">项目优势</p>
+          <h2>面向实际运维的综合价值</h2>
+        </div>
+        <div class="grid advantages">
+          <article class="advantage">效率提升</article>
+          <article class="advantage">减少人工</article>
+          <article class="advantage">降低车辆损伤</article>
+          <article class="advantage">提升城市管理效率</article>
+          <article class="advantage">促进绿色出行</article>
+        </div>
+      </div>
+    </section>
+
+    <section id="questionnaire" class="section questionnaire-section">
+      <div class="container questionnaire-card">
+        <div class="questionnaire-copy">
+          <p class="eyebrow">调查问卷</p>
+          <h2>共享自行车使用与管理需求调查</h2>
+          <p>请使用微信扫描二维码或点击按钮填写共享自行车使用与管理需求调查问卷，填写结果将自动汇总至飞书多维表格。</p>
+          <button class="btn primary questionnaire-button" type="button" data-form-url="FEISHU_FORM_URL">点击填写调查问卷</button>
+        </div>
+        <div class="qr-box">
+          <img src="assets/questionnaire-qr.png" alt="共享自行车调查问卷二维码">
+          <div class="qr-placeholder">
+            请将飞书二维码图片放到 assets 文件夹，并命名为 questionnaire-qr.png
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">团队信息</p>
+          <h2>项目团队</h2>
+        </div>
+        <div class="team-box">
+          <p><strong>项目名称：</strong>共享自行车收集转运系统设计</p>
+          <p><strong>团队成员：</strong>张三、李四、王五（请替换为真实成员）</p>
+          <p><strong>指导老师：</strong>某某老师（请替换为真实姓名）</p>
+          <p><strong>学校学院：</strong>某某大学 某某学院（请替换为真实信息）</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 共享自行车收集转运系统设计项目组</p>
+      <p>本网页用于大学生机械创新设计项目展示，内容可根据项目进展持续更新。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
