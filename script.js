@@ -16,12 +16,15 @@ if (navToggle && navLinks) {
   });
 }
 
-// 问卷按钮：替换 FEISHU_FORM_URL 后会在新窗口打开飞书问卷
+// 问卷链接：如需修改问卷地址，优先修改这里或 index.html 按钮上的 data-form-url
+const QUESTIONNAIRE_URL = "https://icnpo99vzu6r.feishu.cn/base/GQ6ObsULoaAxwpsIC9xcvd2bnPc?from=from_copylink";
+
+// 问卷按钮：点击后会在新窗口打开飞书问卷
 const questionnaireButton = document.querySelector(".questionnaire-button");
 
 if (questionnaireButton) {
   questionnaireButton.addEventListener("click", () => {
-    const formUrl = questionnaireButton.dataset.formUrl;
+    const formUrl = questionnaireButton.dataset.formUrl || QUESTIONNAIRE_URL;
 
     if (!formUrl || formUrl === "FEISHU_FORM_URL") {
       alert("请先在 script.js 或 index.html 中替换飞书问卷链接。");
